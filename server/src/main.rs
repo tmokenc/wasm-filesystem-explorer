@@ -29,7 +29,6 @@ async fn get_thumbnail(
         bytes: Bytes,
     }
     
-    let bytes = Bytes::new();
     let path = &query.path;
     let modified = async_fs::metadata(&path).await?.modified()?;
     
